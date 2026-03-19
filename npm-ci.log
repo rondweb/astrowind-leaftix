@@ -1,0 +1,16 @@
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: '@onwidget/astrowind@1.0.0-beta.52',
+npm warn EBADENGINE   required: { node: '>=22.0.0' },
+npm warn EBADENGINE   current: { node: 'v20.19.4', npm: '11.6.3' }
+npm warn EBADENGINE }
+npm warn EBADENGINE Unsupported engine {
+npm warn EBADENGINE   package: 'sitemap@9.0.1',
+npm warn EBADENGINE   required: { node: '>=20.19.5', npm: '>=10.8.2' },
+npm warn EBADENGINE   current: { node: 'v20.19.4', npm: '11.6.3' }
+npm warn EBADENGINE }
+npm error code ENOTEMPTY
+npm error syscall rmdir
+npm error path /mnt/e/OTHER_PROJECTS/astrowind-leaftix/node_modules/@atproto/api/tests
+npm error errno -39
+npm error ENOTEMPTY: directory not empty, rmdir '/mnt/e/OTHER_PROJECTS/astrowind-leaftix/node_modules/@atproto/api/tests'
+npm error A complete log of this run can be found in: /home/ronaldo/.npm/_logs/2026-03-19T13_33_01_752Z-debug-0.log
