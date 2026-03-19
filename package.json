@@ -4,6 +4,7 @@
   "description": "AstroWind: A free template using Astro 5.0 and Tailwind CSS. Astro starter theme.",
   "type": "module",
   "private": true,
+  "packageManager": "npm@11.6.3",
   "engines": {
     "node": ">=22.0.0"
   },
@@ -12,6 +13,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "preview:cf": "npm run build && wrangler dev --config wrangler.jsonc",
+    "deploy": "npm run build && wrangler deploy --config wrangler.jsonc",
     "astro": "astro",
     "check": "npm run check:astro && npm run check:eslint && npm run check:prettier",
     "check:astro": "astro check",
