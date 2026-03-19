@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/inter';
+import { LINKS } from '~/utils/constants';
 
 // 'DM Sans'
 // Nunito
@@ -19,20 +19,28 @@ import '@fontsource-variable/inter';
 // Urbanist
 ---
 
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+<link
+  rel="stylesheet"
+  as="style"
+  onload="this.rel='stylesheet'"
+  href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+/>
+
 <style is:inline>
   :root {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Noto Sans', sans-serif;
+    --aw-font-serif: 'Noto Sans', sans-serif;
+    --aw-font-heading: 'Space Grotesk', sans-serif;
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: #2bc1ee;
+    --aw-color-secondary: #0d181b;
+    --aw-color-accent: #2bc1ee;
 
-    --aw-color-text-heading: rgb(0 0 0);
-    --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: rgb(255 255 255);
+    --aw-color-text-heading: #0d181b;
+    --aw-color-text-default: #0d181b;
+    --aw-color-text-muted: #4c889a;
+    --aw-color-bg-page: #f8fbfc;
 
     --aw-color-bg-page-dark: rgb(3 6 32);
 
@@ -42,18 +50,18 @@ import '@fontsource-variable/inter';
   }
 
   .dark {
-    --aw-font-sans: 'Inter Variable';
-    --aw-font-serif: 'Inter Variable';
-    --aw-font-heading: 'Inter Variable';
+    --aw-font-sans: 'Noto Sans', sans-serif;
+    --aw-font-serif: 'Noto Sans', sans-serif;
+    --aw-font-heading: 'Space Grotesk', sans-serif;
 
-    --aw-color-primary: rgb(1 97 239);
-    --aw-color-secondary: rgb(1 84 207);
-    --aw-color-accent: rgb(109 40 217);
+    --aw-color-primary: #2bc1ee;
+    --aw-color-secondary: #0d181b;
+    --aw-color-accent: #2bc1ee;
 
-    --aw-color-text-heading: rgb(247, 248, 248);
-    --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
-    --aw-color-bg-page: rgb(3 6 32);
+    --aw-color-text-heading: #0d181b;
+    --aw-color-text-default: #0d181b;
+    --aw-color-text-muted: #4c889a;
+    --aw-color-bg-page: #f8fbfc;
 
     ::selection {
       background-color: black;
