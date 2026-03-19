@@ -12,6 +12,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "postbuild": "node scripts/write-assetsignore.mjs",
     "preview": "astro preview",
     "preview:cf": "npm run build && wrangler dev --config wrangler.jsonc",
     "deploy": "npm run build && wrangler deploy --config wrangler.jsonc",
