@@ -1,19 +1,5 @@
-{{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}  }    "enabled": true  "observability": {  },    "directory": "dist"    "binding": "ASSETS",  "assets": {  "compatibility_flags": ["nodejs_compat"],  "compatibility_date": "2026-03-19",  "main": "dist/_worker.js/index.js",  "name": "astrowind-leaftix",  "$schema": "node_modules/wrangler/config-schema.json",  "$schema": "node_modules/wrangler/config-schema.json",
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "astrowind-leaftix",
   "main": "dist/_worker.js/index.js",
   "compatibility_date": "2026-03-19",
