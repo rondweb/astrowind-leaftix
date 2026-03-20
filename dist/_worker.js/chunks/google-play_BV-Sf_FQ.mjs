@@ -1,0 +1,1 @@
+globalThis.process??={},globalThis.process.env??={};const googlePlay=new Proxy({src:"/_astro/google-play.ISTMcpLO.png",width:300,height:89,format:"png"},{get:(o,e,s)=>"clone"===e?structuredClone(o):"fsPath"===e?"/mnt/e/OTHER_PROJECTS/astrowind-leaftix/src/assets/images/google-play.png":o[e]});export{googlePlay as default};

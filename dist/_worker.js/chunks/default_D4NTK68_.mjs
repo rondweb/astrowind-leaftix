@@ -1,1 +1,0 @@
-globalThis.process??={},globalThis.process.env??={};const _default=new Proxy({src:"/_astro/default.CZ816Hke.png",width:2400,height:1256,format:"png"},{get:(e,t,s)=>"clone"===t?structuredClone(e):"fsPath"===t?"/mnt/d/Projects/astrowind-leaftix/src/assets/images/default.png":e[t]});export{_default as default};

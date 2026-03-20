@@ -1,0 +1,1 @@
+globalThis.process??={},globalThis.process.env??={};const appStore=new Proxy({src:"/_astro/app-store.t3tG4Jz3.png",width:300,height:89,format:"png"},{get:(t,s,e)=>"clone"===s?structuredClone(t):"fsPath"===s?"/mnt/e/OTHER_PROJECTS/astrowind-leaftix/src/assets/images/app-store.png":t[s]});export{appStore as default};
