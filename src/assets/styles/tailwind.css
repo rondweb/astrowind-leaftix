@@ -43,13 +43,33 @@
 }
 
 #header.scroll > div:first-child {
-  @apply bg-page md:bg-white/90 md:backdrop-blur-md;
+  @apply bg-gray-900/80 md:bg-gray-800/60 md:backdrop-blur-md;
   box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
 }
 .dark #header.scroll > div:first-child,
 #header.scroll.dark > div:first-child {
-  @apply bg-page md:bg-[#474747] border-b border-gray-500/20;
+  @apply bg-gray-900/80 md:bg-gray-800/60 md:backdrop-blur-md border-b border-gray-500/20;
   box-shadow: none;
+}
+
+/* Menu colors on scroll state */
+#header.scroll nav {
+  @apply text-white;
+}
+
+#header.scroll nav button,
+#header.scroll nav a {
+  @apply text-white;
+}
+
+/* Logo image: colored initially, white on sticky scroll state */
+.logo-full {
+  filter: none;
+  transition: filter 200ms ease-in-out;
+}
+
+#header.scroll .logo-full {
+  filter: brightness(0) invert(1);
 }
 /* #header.scroll > div:last-child {
   @apply py-3;

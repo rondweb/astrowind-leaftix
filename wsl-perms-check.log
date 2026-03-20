@@ -1,4 +1,0 @@
-ronaldo
-uid=1000(ronaldo) gid=1000(ronaldo) groups=1000(ronaldo),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),1001(docker)
-drwxr-xr-x 1 ronaldo ronaldo 512 Mar 19 11:16 node_modules
-ronaldo ronaldo 755 node_modules
