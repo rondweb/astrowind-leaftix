@@ -27,9 +27,11 @@ const {
     columns={columns}
     defaultIcon={defaultIcon}
     classes={{
-      container: '',
-      title: 'md:text-[1.3rem]',
-      icon: 'text-white bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0',
+      container: 'gap-3 md:gap-4',
+      panel: 'rounded-lg border border-[#cfe2e7] bg-page p-4',
+      title: 'text-base md:text-base font-bold',
+      description: 'text-sm mt-2 leading-relaxed text-muted',
+      icon: 'text-default w-6 h-6 mr-3 rtl:ml-3 rtl:mr-0',
       ...((classes?.items as Record<string, never>) ?? {}),
     }}
   />

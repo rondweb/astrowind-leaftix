@@ -11,23 +11,23 @@ const {
 ---
 
 <div class="@container">
-    <div class="@[480px]:p-4">
+    <div class="@[480px]:p-4 md:pt-6">
         <div
-            class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+            class="flex min-h-[420px] md:min-h-[500px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-6 md:p-10"
             style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHQaiQnGckKD-JfK7OpHSMdj14uBHEsf5glD8CjtMJtkLmO2Ocj5BN4xcDWhRX1uFNjHAp8pO-Mag4zHlGPSrH-7ZD6Yr_d0RfwHZZR158F2dxkw7GuJHJYdkA-suEl1GDNSK_i1BuFCILgNJ21EgBr27r1c48Vhvg1rqvyi01gAbSlVsJdj_Wg1kDFz7_F9CA2kws28KV_ZPKzDKKeFgFBAKhsKgqKMMRUqL0YvKx6jwja2nfe58vVJTgi3Xz28x4LvNBw1GehDk");'
         >
-            <div class="flex flex-col gap-2 text-center">
+            <div class="flex flex-col gap-3 text-center max-w-4xl">
                 {
                     title && (
                         <h1
-                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                            class="text-white text-4xl font-black leading-tight tracking-[-0.025em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
                             set:html={title}
                         />
                     )
                 }
                 {
                     subtitle && (
-                        <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal" set:html={subtitle}/>
+                        <h2 class="text-white/90 text-sm md:text-base font-medium leading-relaxed" set:html={subtitle}/>
                     )
                 }
             </div>

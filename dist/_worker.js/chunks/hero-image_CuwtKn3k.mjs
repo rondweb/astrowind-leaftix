@@ -1,0 +1,1 @@
+globalThis.process??={},globalThis.process.env??={};const heroImage=new Proxy({src:"/_astro/hero-image.DwIC_L_T.png",width:1600,height:939,format:"png"},{get:(e,s,o)=>"clone"===s?structuredClone(e):"fsPath"===s?"/mnt/d/Projects/astrowind-leaftix/src/assets/images/hero-image.png":e[s]});export{heroImage as default};

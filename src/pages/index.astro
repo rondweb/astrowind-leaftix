@@ -2,18 +2,12 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Leaftix',
   ignoreTitleTemplate: true,
 };
 ---
@@ -22,7 +16,7 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    actions={[{ text: "Explore Solutions", href: "#" }]}
+    actions={[{ text: 'Explore Solutions', href: '#features', variant: 'primary', class: 'px-5 md:px-6 h-10 md:h-12' }]}
   >
     <Fragment slot="title">
       Empowering Growers with Precision Agriculture
@@ -37,7 +31,18 @@ const metadata = {
 
   <Features
     id="features"
-    tagline="Core Technology Pillars"
+    classes={{
+      container: 'max-w-[960px]',
+      headline: {
+        container: 'max-w-[720px] md:mx-0 md:text-left text-left mb-8',
+        title: 'text-[2rem] md:text-5xl leading-tight tracking-[-0.02em]',
+        subtitle: 'text-base text-default mt-3 leading-relaxed',
+      },
+      items: {
+        container: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-4',
+      },
+    }}
+    tagline="Our Core Technology Pillars"
     title="Comprehensive Solutions for Every Growing Environment"
     subtitle="Leaftix offers a suite of integrated solutions tailored to different agricultural settings, from field production to indoor cultivation and pasture management."
     items={[
@@ -51,7 +56,7 @@ const metadata = {
         title: 'Leaftix Microgreens',
         description:
           'Revolutionize indoor microgreens cultivation with smart monitoring and control systems.',
-        icon: 'tabler:house',
+        icon: 'tabler:home',
       },
       {
         title: 'Leaftix Greenpast',
@@ -63,7 +68,7 @@ const metadata = {
         title: 'Leaftix Consulting',
         description:
           'Leverage our expertise to develop customized solutions for your specific needs and challenges.',
-        icon: 'tabler:gear',
+        icon: 'tabler:settings',
       },
     ]}
   />
@@ -71,6 +76,18 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features
+    id="microgreens-solutions"
+    classes={{
+      container: 'max-w-[960px]',
+      headline: {
+        container: 'max-w-[720px] md:mx-0 md:text-left text-left mb-8',
+        title: 'text-[2rem] md:text-5xl leading-tight tracking-[-0.02em]',
+        subtitle: 'text-base text-default mt-3 leading-relaxed',
+      },
+      items: {
+        container: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+      },
+    }}
     tagline="Microgreens Solutions"
     title="Tailored Packages for Microgreens Growers"
     subtitle="Leaftix Microgreens offers specialized packages designed to meet the unique needs of microgreens producers, from small-scale startups to large commercial
@@ -97,6 +114,18 @@ const metadata = {
   />
 
   <Features2
+    id="microgreens-use-cases"
+    classes={{
+      container: 'max-w-[960px]',
+      headline: {
+        container: 'max-w-[720px] md:mx-0 md:text-left text-left mb-8',
+        title: 'text-[2rem] md:text-5xl leading-tight tracking-[-0.02em]',
+        subtitle: 'text-base text-default mt-3 leading-relaxed',
+      },
+      items: {
+        container: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
+      },
+    }}
       tagline="Microgreens Use Cases"
       title="Real-World Applications of Leaftix Microgreens"
       subtitle="See how Leaftix Microgreens is helping growers achieve higher yields, reduce costs, and improve product quality."
@@ -109,7 +138,7 @@ const metadata = {
           {
               title: 'Resource Efficiency',
               description: 'Reduce water and energy consumption through precise monitoring and automated controls.',
-              icon: 'tabler:clock-counter-clockwise',
+              icon: 'tabler:history',
           },
           {
               title: 'Quality Control',
@@ -119,4 +148,13 @@ const metadata = {
       ]}
   >
   </Features2>
+
+  <CallToAction
+    classes={{
+      container: 'max-w-[960px] pt-4 md:pt-8',
+    }}
+    title="Ready to Transform Your Growing Operation?"
+    subtitle="Contact us today to learn more about how Leaftix can help you achieve your goals."
+    actions={[{ text: 'Get Started', href: '/contact', variant: 'primary', class: 'px-5 md:px-6 h-10 md:h-12' }]}
+  />
 </Layout>
