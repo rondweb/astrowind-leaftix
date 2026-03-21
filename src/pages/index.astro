@@ -3,7 +3,6 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
@@ -73,81 +72,36 @@ const metadata = {
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- About Us Section ************** -->
 
-  <Features
-    id="microgreens-solutions"
+  <CallToAction
+    id="about-us"
     classes={{
-      container: 'max-w-[960px]',
-      headline: {
-        container: 'max-w-[720px] md:mx-0 md:text-left text-left mb-8',
-        title: 'text-[2rem] md:text-5xl leading-tight tracking-[-0.02em]',
-        subtitle: 'text-base text-default mt-3 leading-relaxed',
-      },
-      items: {
-        container: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
-      },
+      container: 'max-w-[960px] pt-2',
     }}
-    tagline="Microgreens Solutions"
-    title="Tailored Packages for Microgreens Growers"
-    subtitle="Leaftix Microgreens offers specialized packages designed to meet the unique needs of microgreens producers, from small-scale startups to large commercial
-    operations."
-    items={[
-      {
-        title: 'Starter Package',
-        description: "Ideal for new microgreens growers, providing essential monitoring and control features.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Professional Package',
-        description:
-          "Designed for established growers seeking advanced automation and optimization tools.",
-        icon: 'tabler:package',
-      },
-      {
-        title: 'Enterprise Package',
-        description:
-          'Comprehensive solution for large-scale operations, including custom integrations and support.',
-        icon: 'tabler:package',
-      },
+    title="Welcome to Leaftix"
+    subtitle="Where we revolutionize agriculture with cutting-edge technology. Our mission is to provide modern, accessible, and useful technologies that optimize processes, reduce production costs, and promote environmental stewardship. With a suite of products and services for smart farming we empower farmers to enhance productivity and profitability while safeguarding the planet.<br /><br />Guided by our values of modernity, transparency, and sustainability, Leaftix aims to lead in agricultural innovation. By addressing the challenges of inefficient and unsustainable practices, we create value for our customers, partners, employees, and shareholders, contributing to the well-being of the communities we serve.<br /><br />Explore how Leaftix can transform your farming operations and join us in our commitment to a sustainable and prosperous future."
+    actions={[
+      { text: 'More Information', href: '/about', variant: 'secondary' },
+      { text: 'Explore Solutions', href: '#features', variant: 'primary' },
     ]}
-  />
-
-  <Features2
-    id="microgreens-use-cases"
-    classes={{
-      container: 'max-w-[960px]',
-      headline: {
-        container: 'max-w-[720px] md:mx-0 md:text-left text-left mb-8',
-        title: 'text-[2rem] md:text-5xl leading-tight tracking-[-0.02em]',
-        subtitle: 'text-base text-default mt-3 leading-relaxed',
-      },
-      items: {
-        container: 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3',
-      },
-    }}
-      tagline="Microgreens Use Cases"
-      title="Real-World Applications of Leaftix Microgreens"
-      subtitle="See how Leaftix Microgreens is helping growers achieve higher yields, reduce costs, and improve product quality."
-      items={[
-          {
-              title: 'Yield Optimization',
-              description: 'Increase microgreens yields by optimizing growing conditions and resource utilization.',
-              icon: 'tabler:chart-line',
-          },
-          {
-              title: 'Resource Efficiency',
-              description: 'Reduce water and energy consumption through precise monitoring and automated controls.',
-              icon: 'tabler:history',
-          },
-          {
-              title: 'Quality Control',
-              description: 'Maintain consistent product quality and meet market demands with real-time data and insights.',
-              icon: 'tabler:plant',
-          },
-      ]}
   >
-  </Features2>
+    <Fragment slot="content">
+      <div class="w-full max-w-3xl mx-auto overflow-hidden rounded-xl border border-[#cfe2e7] shadow-lg">
+        <div class="relative w-full pt-[56.25%]">
+          <iframe
+            class="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/GpOW09_BJUU"
+            title="Leaftix Institutional Video"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </Fragment>
+  </CallToAction>
 
   <CallToAction
     classes={{

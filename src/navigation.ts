@@ -7,16 +7,12 @@ export const headerData = {
       href: getPermalink('/#features'),
     },
     {
-      text: 'Products',
-      href: getPermalink('/#microgreens-solutions'),
+      text: 'About Us',
+      href: getPermalink('/#about-us'),
     },
     {
-      text: 'Resources',
-      href: getPermalink('/#microgreens-use-cases'),
-    },
-    {
-      text: 'Company',
-      href: getPermalink('/about'),
+      text: 'Microgreens',
+      href: getPermalink('/microgreens'),
     },
   ],
   actions: [{ text: 'Get Started', href: getPermalink('/contact'), variant: 'primary' as const }],
@@ -81,6 +77,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    Made by <a class="text-[#1b5e20] underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
   `,
 };
