@@ -1,0 +1,1 @@
+globalThis.process??={},globalThis.process.env??={};import{an as NOOP_MIDDLEWARE_HEADER}from"./astro/server_GXJ-COq2.mjs";const NOOP_MIDDLEWARE_FN=async(s,r)=>{const E=await r();return E.headers.set(NOOP_MIDDLEWARE_HEADER,"true"),E};export{NOOP_MIDDLEWARE_FN as N};

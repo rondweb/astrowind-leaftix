@@ -1,0 +1,1 @@
+import o from"https://cdn.jsdelivr.net/npm/@typebot.io/js@0/dist/web.js";o.initBubble({typebot:"nisa-tf68dbd",theme:{button:{backgroundColor:"#1D1D1D",customIconSrc:"https://s3.typebot.io/public/workspaces/cm702bhdy0001bt4xnqcczcud/typebots/c4w9cblq9rfgp2z1ltf68dbd/bubble-icon?v=1774062304467",size:"large"},chatWindow:{backgroundColor:"#F8F8F8"}}});
